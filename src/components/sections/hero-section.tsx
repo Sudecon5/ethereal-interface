@@ -120,7 +120,7 @@ export const HeroSection = () => {
         className="absolute inset-0 z-0"
       >
         <iframe 
-          src='https://my.spline.design/particlenebula-LA4hxuTJ4qshTwq1M0ERi4uF/' 
+          src='https://my.spline.design/orb-XpZ9UBCVC4Xmof5gjx0kCWq5/' 
           frameBorder='0' 
           width='100%' 
           height='100%'

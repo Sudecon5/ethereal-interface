@@ -88,56 +88,56 @@ export const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "Healthcare Analytics Platform",
-      description: "ML-powered platform for predictive healthcare analytics and patient outcome modeling.",
-      image: "/lovable-uploads/0cbe40f1-dfb8-4a53-a991-4bfabad85262.png",
+      title: "European Policy Analytics",
+      description: "Data-driven analysis platform for European policy trends and decision-making insights.",
+      image: "/lovable-uploads/960f1f99-17ce-474b-b498-78c336fb9a72.png",
       icon: Database,
-      tech: ["Python", "TensorFlow", "React", "PostgreSQL"],
+      tech: ["Python", "pandas", "scikit-learn", "Plotly"],
       color: "neon-blue"
     },
     {
       id: 2,
-      title: "Smart Agriculture AI",
-      description: "Computer vision system for crop health monitoring and yield prediction using satellite imagery.",
-      image: "/lovable-uploads/7da09754-9422-4f6e-9f2f-a5ad75ff2264.png",
-      icon: Leaf,
-      tech: ["PyTorch", "OpenCV", "FastAPI", "AWS"],
+      title: "Healthcare Cost Predictor",
+      description: "ML model predicting healthcare costs and optimizing insurance pricing strategies.",
+      image: "/lovable-uploads/70a9715d-9986-4cbf-8e11-f8acfb3f0dd7.png",
+      icon: Brain,
+      tech: ["R", "TensorFlow", "XGBoost", "Shiny"],
       color: "neon-cyan"
     },
     {
       id: 3,
-      title: "Financial Risk Assessment",
-      description: "Advanced ML models for credit risk analysis and fraud detection in financial transactions.",
-      image: "/lovable-uploads/0cbe40f1-dfb8-4a53-a991-4bfabad85262.png",
+      title: "Smart Communication System",
+      description: "AI-powered email automation and sentiment analysis for business communications.",
+      image: "/lovable-uploads/c1351e0f-17df-4e96-9ecd-4e96b778d5f1.png",
       icon: CurrencyDollar,
-      tech: ["Scikit-learn", "XGBoost", "Flask", "MongoDB"],
+      tech: ["Python", "BERT", "FastAPI", "React"],
       color: "neon-purple"
     },
     {
       id: 4,
-      title: "Real Estate Price Predictor",
-      description: "Comprehensive price prediction model using market trends and property features.",
-      image: "/lovable-uploads/5c7c0862-91c7-46ed-8b8d-7bb88fe17b4a.png",
+      title: "Real Estate Market Intelligence",
+      description: "Predictive analytics platform for property valuation and market trend analysis.",
+      image: "/lovable-uploads/8e7f323b-ae7a-4b57-88f6-5472a96e85a8.png",
       icon: House,
-      tech: ["Pandas", "Plotly", "Streamlit", "Redis"],
+      tech: ["Python", "Prophet", "PostgreSQL", "Tableau"],
       color: "neon-blue"
     },
     {
       id: 5,
-      title: "Electric Vehicle Analytics",
-      description: "Data analysis platform for EV charging patterns and energy optimization.",
-      image: "/lovable-uploads/57bb596f-3ecc-47f1-8484-505432aa9502.png",
-      icon: Car,
-      tech: ["Apache Spark", "Kafka", "D3.js", "Elasticsearch"],
+      title: "Nutrition Optimization Engine",
+      description: "Computer vision system for food recognition and personalized nutrition recommendations.",
+      image: "/lovable-uploads/9ba9f96e-17ac-4d6a-a1b8-83d9ed492b49.png",
+      icon: Leaf,
+      tech: ["Python", "YOLO", "OpenCV", "MongoDB"],
       color: "neon-cyan"
     },
     {
       id: 6,
-      title: "Business Intelligence Dashboard",
-      description: "Interactive dashboard for real-time business metrics and KPI tracking.",
-      image: "/lovable-uploads/3172ad90-ac5c-451e-9491-5e96499a5219.png",
-      icon: ChartLine,
-      tech: ["Tableau", "Power BI", "SQL", "Azure"],
+      title: "EV Charging Analytics",
+      description: "Smart grid optimization and charging pattern analysis for electric vehicle infrastructure.",
+      image: "/lovable-uploads/bae0c678-8653-4811-8ae4-dd451e3e6090.png",
+      icon: Car,
+      tech: ["Python", "TensorFlow", "TimescaleDB", "Grafana"],
       color: "neon-purple"
     }
   ];
