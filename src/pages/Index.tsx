@@ -1,12 +1,42 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState, useEffect } from 'react';
+import { LoadingScreen } from '@/components/ui/loading-screen';
+import { Navigation } from '@/components/layout/navigation';
+import { HeroSection } from '@/components/sections/hero-section';
+import { AboutSection } from '@/components/sections/about-section';
+import { ProjectsSection } from '@/components/sections/projects-section';
+import { ContactSection } from '@/components/sections/contact-section';
+import { Footer } from '@/components/layout/footer';
 
 const Index = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Ensure minimum loading time for better UX
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleLoadingComplete = () => {
+    setIsLoading(false);
+  };
+
+  if (isLoading) {
+    return <LoadingScreen onComplete={handleLoadingComplete} />;
+  }
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-gradient-background">
+      <Navigation />
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <ProjectsSection />
+        <ContactSection />
+      </main>
+      <Footer />
     </div>
   );
 };
