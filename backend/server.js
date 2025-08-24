@@ -12,6 +12,16 @@ const port = process.env.PORT || 10000;
 app.use(cors());
 app.use(bodyParser.json());
 
+// Add this root route handler
+app.get('/', (req, res) => {
+  res.json({ 
+    message: 'Backend server is running!',
+    endpoints: {
+      sendEmail: 'POST /send-email'
+    }
+  });
+});
+
 app.post('/send-email', async (req, res) => {
   const { name, email, message } = req.body;
 
