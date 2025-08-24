@@ -99,7 +99,7 @@ export const ContactSection = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Animate submit button
@@ -116,6 +116,27 @@ export const ContactSection = () => {
 
     // Here you would typically handle form submission
     console.log('Form submitted:', formData);
+
+    try {
+      const response = await fetch('http://localhost:3001/send-email', { // Replace with your backend URL
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        console.log('Email sent successfully!');
+        // Optionally show a success message to the user
+      } else {
+        console.error('Failed to send email:', response.status);
+        // Optionally show an error message to the user
+      }
+    } catch (error) {
+      console.error('Error sending email:', error);
+      // Optionally show an error message to the user
+    }
     
     // Reset form
     setFormData({

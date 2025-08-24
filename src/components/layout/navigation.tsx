@@ -118,6 +118,17 @@ export const Navigation = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const handleDownloadCV = () => {
+  // Create a temporary anchor element
+  const link = document.createElement('a');
+  link.href = '/sudipta_cv.pdf'; // Replace with the correct path to your CV
+  link.download = 'Sudipta_Kakoty_CV.pdf'; // Suggest a filename
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);        
+  };
+
+
   return (
     <>
       <nav 
@@ -154,7 +165,15 @@ export const Navigation = () => {
                   {item.label}
                 </button>
               ))}
-              
+               <GlassButton 
+                variant="outline" 
+                size="sm"
+                className="nav-item"
+                onClick={handleDownloadCV}
+              >
+                Download CV
+              </GlassButton>
+
               <GlassButton 
                 variant="outline" 
                 size="sm"
@@ -179,10 +198,10 @@ export const Navigation = () => {
       {/* Mobile Menu */}
       <div 
         ref={mobileMenuRef}
-        className="fixed inset-0 z-40 md:hidden bg-background/95 backdrop-blur-lg"
+        className="fixed inset-0 z-40 md:hidden bg-background/95 backdrop-blur-lg flex justify-end"
         style={{ display: 'none' }}
       >
-        <div className="flex flex-col items-center justify-center h-full space-y-8">
+        <div className="flex flex-col items-center justify-center h-full space-y-8 mr-10">
           {navItems.map((item) => (
             <button
               key={item.label}
@@ -192,6 +211,15 @@ export const Navigation = () => {
               {item.label}
             </button>
           ))}
+
+          <GlassButton 
+            variant="hero" 
+            size="lg"
+            className="mobile-nav-item"
+            onClick={handleDownloadCV}
+          >
+            Download CV
+          </GlassButton>
           
           <GlassButton 
             variant="hero" 
