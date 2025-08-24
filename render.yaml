@@ -1,0 +1,10 @@
+# filepath: /Users/sudiptapriyamkakoty/ethereal-interface/render.yaml
+services:
+  - type: web_static
+    name: ethereal-interface-frontend
+    env: static
+    buildCommand: npm run build   # Or yarn build
+    staticPublishPath: dist       # Or build, depending on your build output directory
+    routes:
+      - source: /(.*)
+        destination: /

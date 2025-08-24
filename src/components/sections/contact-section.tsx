@@ -118,7 +118,7 @@ export const ContactSection = () => {
     console.log('Form submitted:', formData);
 
     try {
-      const response = await fetch('http://localhost:3001/send-email', { // Replace with your backend URL
+      const response = await fetch('https://my-contact-form-backend.onrender.com', { // Replace with your backend URL
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
