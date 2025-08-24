@@ -147,14 +147,14 @@ export const HeroSection = () => {
               Sudipta Priyam
             </span>
             <br />
-            <span className="text-2xl md:text-4xl lg:text-5xl text-muted-foreground">
+            <span className="text-2xl md:text-4xl lg:text-5xl text-gray-300 font-medium">
               Data Scientist
             </span>
           </h1>
 
           <p 
             ref={subtitleRef}
-            className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed"
+            className="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed"
           >
             Transforming complex data into meaningful insights through 
             cutting-edge machine learning and advanced analytics.
@@ -168,7 +168,6 @@ export const HeroSection = () => {
             >
               Hire Me
             </GlassButton>
-            
             <GlassButton 
               variant="outline" 
               size="xl"
@@ -176,6 +175,7 @@ export const HeroSection = () => {
             >
               View Projects
             </GlassButton>
+            
           </div>
         </div>
       </div>

@@ -60,19 +60,19 @@ export const Footer = () => {
     {
       icon: GithubLogo,
       label: 'GitHub',
-      href: 'https://github.com/sudiptapriyam',
+      href: 'https://github.com/Sudecon5',
       color: 'hover:text-white'
     },
     {
       icon: LinkedinLogo,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/sudiptapriyam',
+      href: 'https://www.linkedin.com/in/sudiptapriyamkakoty/',
       color: 'hover:text-blue-400'
     },
     {
       icon: EnvelopeSimple,
       label: 'Email',
-      href: 'mailto:sudipta@example.com',
+      href: 'mailto:sudiptapriyam55@gmail.com',
       color: 'hover:text-red-400'
     }
   ];
@@ -176,7 +176,7 @@ export const Footer = () => {
         <div className="footer-item pt-8 border-t border-border/30">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-muted-foreground text-sm flex items-center">
-              © 2024 Sudipta Priyam. Made with{' '}
+              © 2025 Sudipta Priyam. Made with{' '}
               <Heart size={16} className="mx-1 text-red-400" />
               and lots of coffee.
             </p>

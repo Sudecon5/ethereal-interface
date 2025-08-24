@@ -129,19 +129,19 @@ export const ContactSection = () => {
     {
       icon: GithubLogo,
       label: 'GitHub',
-      href: 'https://github.com/sudiptapriyam',
+      href: 'https://github.com/Sudecon5',
       color: 'hover:text-white'
     },
     {
       icon: LinkedinLogo,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/sudiptapriyam',
+      href: 'https://www.linkedin.com/in/sudiptapriyamkakoty/',
       color: 'hover:text-blue-400'
     },
     {
       icon: EnvelopeSimple,
       label: 'Email',
-      href: 'mailto:sudipta@example.com',
+      href: 'mailto:sudiptapriyam55@gmail.com',
       color: 'hover:text-red-400'
     }
   ];

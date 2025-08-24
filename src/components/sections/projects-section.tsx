@@ -86,59 +86,56 @@ export const ProjectsSection = () => {
   }, []);
 
   const projects = [
+    
     {
       id: 1,
-      title: "European Policy Analytics",
-      description: "Data-driven analysis platform for European policy trends and decision-making insights.",
-      image: "/lovable-uploads/960f1f99-17ce-474b-b498-78c336fb9a72.png",
-      icon: Database,
-      tech: ["Python", "pandas", "scikit-learn", "Plotly"],
-      color: "neon-blue"
-    },
-    {
-      id: 2,
       title: "Healthcare Cost Predictor",
       description: "ML model predicting healthcare costs and optimizing insurance pricing strategies.",
       image: "/lovable-uploads/70a9715d-9986-4cbf-8e11-f8acfb3f0dd7.png",
       icon: Brain,
-      tech: ["R", "TensorFlow", "XGBoost", "Shiny"],
-      color: "neon-cyan"
+      tech: ["R", "TensorFlow", "XGBoost", "Regression"],
+      color: "neon-cyan",
+      link: "https://medical-insurance-1-61os.onrender.com"
     },
     {
-      id: 3,
+      id: 2,
       title: "Smart Communication System",
       description: "AI-powered email automation and sentiment analysis for business communications.",
       image: "/lovable-uploads/c1351e0f-17df-4e96-9ecd-4e96b778d5f1.png",
       icon: CurrencyDollar,
       tech: ["Python", "BERT", "FastAPI", "React"],
-      color: "neon-purple"
+      color: "neon-purple",
+      link: "https://sudecon5.github.io/Cover_Letter_Generator/"
     },
     {
-      id: 4,
+      id: 3,
       title: "Real Estate Market Intelligence",
       description: "Predictive analytics platform for property valuation and market trend analysis.",
       image: "/lovable-uploads/8e7f323b-ae7a-4b57-88f6-5472a96e85a8.png",
       icon: House,
-      tech: ["Python", "Prophet", "PostgreSQL", "Tableau"],
-      color: "neon-blue"
+      tech: ["Python", "Statistical ML", "Jupyter Notebook","SQL", "Tableau"],
+      color: "neon-blue",
+      link: "https://house-prediction-p7qa.onrender.com"
+    },
+    {
+      id: 4,
+      title: "Bell Pepper Disease Identification",
+      description: "Computer vision system and neural network framework for identification of diseases in plants.",
+      image: "/lovable-uploads/9ba9f96e-17ac-4d6a-a1b8-83d9ed492b49.png",
+      icon: Leaf,
+      tech: ["Python", "Pytorch", "Neural Network", "Streamlit", "FastAPI"],
+      color: "neon-cyan",
+      link: "https://github.com/Sudecon5/Bell_Pepper_Disease?tab=readme-ov-file"
     },
     {
       id: 5,
-      title: "Nutrition Optimization Engine",
-      description: "Computer vision system for food recognition and personalized nutrition recommendations.",
-      image: "/lovable-uploads/9ba9f96e-17ac-4d6a-a1b8-83d9ed492b49.png",
-      icon: Leaf,
-      tech: ["Python", "YOLO", "OpenCV", "MongoDB"],
-      color: "neon-cyan"
-    },
-    {
-      id: 6,
-      title: "EV Charging Analytics",
+      title: "Washington State Electronic Vehicle",
       description: "Smart grid optimization and charging pattern analysis for electric vehicle infrastructure.",
       image: "/lovable-uploads/bae0c678-8653-4811-8ae4-dd451e3e6090.png",
       icon: Car,
-      tech: ["Python", "TensorFlow", "TimescaleDB", "Grafana"],
-      color: "neon-purple"
+      tech: ["Python", "Matplolib", "Scikit-Learn","Seaborn"],
+      color: "neon-purple",
+      link: "https://github.com/Sudecon5/Washington-State-Electronic-Vehicle"
     }
   ];
 
@@ -215,7 +212,12 @@ export const ProjectsSection = () => {
                     </span>
                   ))}
                 </div>
-
+                <a 
+                  href={project.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="w-full block" // block makes the link take up full width
+                >
                 {/* CTA Button */}
                 <GlassButton 
                   variant="outline" 
@@ -224,6 +226,7 @@ export const ProjectsSection = () => {
                 >
                   View Project
                 </GlassButton>
+                </a>
               </div>
             </div>
           ))}

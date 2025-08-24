@@ -45,7 +45,7 @@ export const Navigation = () => {
     window.addEventListener('scroll', handleScroll);
 
     // Active section detection
-    const sections = ['hero', 'about', 'projects', 'contact'];
+    const sections = ['hero', 'about', 'projects','contact'];
     const observerOptions = {
       rootMargin: '-50% 0px -50% 0px',
       threshold: 0

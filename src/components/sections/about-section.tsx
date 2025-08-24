@@ -129,7 +129,7 @@ export const AboutSection = () => {
           {/* Content */}
           <div ref={contentRef} className="space-y-8">
             <div>
-              <h2 className="text-4xl lg:text-5xl font-light mb-6">
+              <h2 className="text-4xl lg:text-5xl font-normal mb-6">
                 About{' '}
                 <span className="bg-gradient-primary bg-clip-text text-transparent font-medium">
                   Me
